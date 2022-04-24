@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #333;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    height: 80vh;
+}
+
+h1,
+nav,
+footer {
+    text-align: center;
+}
+
+h1 a {
+    display: block;
+    padding: 2rem;
+}
+
+nav {
+    margin: 2rem;
+}
+/**********************/
+/**********************/
+nav a {
+    text-transform: uppercase;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+nav a.active{
+    background-color: #fff;
+    color: #333;
+}
+
+/**********************/
+/**********************/
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}

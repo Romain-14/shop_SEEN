@@ -1,0 +1,19 @@
+<header>
+
+    <h1><a href="/">candy shop</a></h1>
+    
+    <nav>
+        <a href="/" class="<%= template === 'home' && 'active' %>">home</a>
+        <a href="/shop" class="<%= template === 'shop' ? 'active' : null %>">shop</a>
+        
+        <% if(session.isLogged) {%>
+            <a href="/authentication/logout" class="<%= template === 'auth' ? 'active' : null %>">logout</a>
+        <%} else {%>
+            <a href="/authentication/login" class="<%= template === 'auth' ? 'active' : null %>">login/signin</a>
+        <%}%>
+    </nav>
+    <% if(session.isLogged) {%>
+        <p>Hey, <%= session.user.alias %> !</p>
+    <%}%>
+    
+</header>
